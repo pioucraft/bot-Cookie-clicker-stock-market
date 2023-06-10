@@ -52,4 +52,4 @@ buyOrSell(bankGoods)
 loop = setInterval(() => {
     buyOrSell(bankGoods)
     console.log("tick")
-}, 61*1000)
+}, 60*1000)
