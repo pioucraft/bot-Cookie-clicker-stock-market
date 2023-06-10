@@ -41,7 +41,7 @@ function tryToBuyGoods(bankGood, bankLevel) {
 function tryToSellGoods(bankGood, bankLevel) {
     let goodPrice = document.getElementById(`bankGood-${bankGood}-val`).innerHTML.replace("$", "")
     let restingValue = 10*(bankGood+1) + bankLevel + 1
-    if(restingValue + restingValue*0.3 < goodPrice) {
+    if(restingValue + restingValue*0.2 < goodPrice) {
         console.log("sell " + bankGood + ", resting value = " + restingValue + ", price = " + goodPrice)
         document.getElementById(`bankGood-${bankGood}_-All`).click()
     }
