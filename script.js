@@ -32,7 +32,7 @@ function buyOrSell(bankGoods) {
 function tryToBuyGoods(bankGood, bankLevel) {
     let goodPrice = document.getElementById(`bankGood-${bankGood}-val`).innerHTML.replace("$", "")
     let restingValue = 10*(bankGood+1) + bankLevel + 1
-    if(goodPrice < restingValue - restingValue*0.1) {
+    if(goodPrice < restingValue) {
         console.log("buy " + bankGood + ", resting value = " + restingValue + ", price = " + goodPrice)
         document.getElementById(`bankGood-${bankGood}_Max`).click()
     }
